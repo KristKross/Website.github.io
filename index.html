@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    #text {
+        animation: text 4s infinite;
+    }
+
+    @keyframes text {
+        from {
+            color: blueviolet;
+        }
+        to {
+            color: pink;
+        }   
+    }
+
+    #text2 {
+        position: relative;
+        animation: text2 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes text2 {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 200px;
+            color: blue;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1 id="text">The first one</h1>
+    <div id="text">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis tellus. 
+            In vel maximus tellus. Sed diam orci, tempor ut malesuada vitae, lobortis a dolor. 
+            Donec fermentum dui et sapien ultricies rhoncus. Aliquam vel luctus nibh. Nulla 
+            accumsan lorem vel dignissim ornare. Curabitur vulputate tempus lacus non finibus.
+        </p>
+    </div>
+
+    <h1 id="text2">The second one</h1>
+    <div id="text2">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis tellus. 
+            In vel maximus tellus. Sed diam orci, tempor ut malesuada vitae, lobortis a dolor. 
+            Donec fermentum dui et sapien ultricies rhoncus. Aliquam vel luctus nibh. Nulla 
+            accumsan lorem vel dignissim ornare. Curabitur vulputate tempus lacus non finibus.
+        </p>
+    </div>
+</body>
+</html>
