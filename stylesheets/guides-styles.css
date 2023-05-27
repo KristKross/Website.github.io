@@ -1,3 +1,4 @@
+/* Using the universal selector to put all elements at the edge of the website. */
 * {
     margin: 0;
 }
@@ -115,6 +116,7 @@ footer {
     padding-top: 20px;
 }
 
+/* Adding media screen to make the website respnosive. */
 @media screen and (max-width: 1560px) {
     header {
         font-family: 'Averia Serif Libre', cursive;
