@@ -1,3 +1,4 @@
+/* Using the universal selector to put all elements at the edge of the website. */
 * {
     margin: 0;
 }
@@ -20,7 +21,7 @@ header {
 }
   
 .heading {
-    text-align: center;
+    text-align: center;  
     margin-top: 150px;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     color: #6D1010;
@@ -116,6 +117,7 @@ footer {
     padding-top: 20px;
 }
 
+/* Adding media screen to make the website respnosive. */
 @media screen and (max-width: 1560px) {
     header {
         font-family: 'Averia Serif Libre', cursive;
@@ -364,7 +366,7 @@ footer {
         text-align: center;
         padding: 0 10px 0 10px;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .tier-list {

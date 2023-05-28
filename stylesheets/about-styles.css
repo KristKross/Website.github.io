@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     background-color: #0c0c0c;
     font-family: Arial, Helvetica, sans-serif;
-    color: lightgray;
+    color: lightgrey;
 }
 
 header {
@@ -15,7 +15,6 @@ header {
     width: 100%;
     height: 420px;
     background-image: url(header.png);
-    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -35,21 +34,16 @@ ul {
     display: flex;
 }
 
-li {
-    margin: 20px 1.5em 20px 0;
-}
-
-li a {
+a {
     color: #6D1010;
     text-decoration: none;
 }
 
-a {
-    color: lightgray;
-    text-decoration: none;
+li {
+    margin: 20px 1.5em 20px 0;
 }
 
-li a:hover {
+a:hover {
     color: white;
 }
 
@@ -62,49 +56,24 @@ nav {
     background-color: black;
 }
 
-.items {
+.text {
     width: 1780px;
-    height: 471px;
+    height: max-content;
     margin-left: 70px;
     margin-top: 90px;
-    opacity: 1;
 }
 
-.items:hover {
-    opacity: 0.6;
-}
-
-img.home {
-    float: left;
-    width: 837px;
-    height: 471px;
-}
-
-
-.image-container {
-    display: flex;
-    align-items: center;
-  }
-
-.text-container {
-    margin-left: 40px;
-}
-
-.tag {
-    font-size: 40px;
-    margin-top: 20px;
-    color: #9D7205;
-}
-
-.title {
-    font-size: 65px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+h1 {
+    font-size: 70px;
     font-weight: 600;
+    padding: 60px 60px 60px 60px;
+    color: white;
 }
 
-.subtitle {
+.text p {
     font-size: 40px;
+    padding-left: 60px;
+    color: white;
 }
 
 footer {
@@ -127,44 +96,22 @@ footer {
         flex-direction: column;
     }
 
-    .items {
-        overflow: hidden;
-        width: 1426px;
-        height: 376px;
-        margin-left: 56px;
+    .text {
+        width: 1420px;
+        height: max-content;
+        margin-left: 70px;
         margin-top: 90px;
     }
-
-    img.home {
-        float: left;
-        width: 669.6px;
-        height: 376.8px;
-    }
-
-    .image-container {
-        display: flex;
-        align-items: center;
-     }
-
-    .text-container {
-        margin-left: 40px;
-    }
-
-    .tag {
-        font-size: 40px;
-        margin-top: 20px;
-        color: orange;
-    }
-
-    .title {
-        font-size: 65px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    
+    h1 {
+        font-size: 70px;
         font-weight: 600;
+        padding: 60px 60px 60px 60px;
     }
-
-    .subtitle {
+    
+    .text p {
         font-size: 40px;
+        padding-left: 60px;
     }
 }
 
@@ -183,61 +130,35 @@ footer {
         text-align: center;
         margin-top: 150px;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        color: #6D1010;
         font-size: 70px;
         font-weight: 600;
     }
 
     nav {
-        color: #6D1010;
         text-align: center;
         padding: 0 10px 0 10px;
         text-align: center;
         font-size: 30px;
     }
-    
-    .items {
-        overflow: hidden;
-        width: 837px;
-        height: 941px;
-        margin-left: 310px;
+
+    .text {
+        width: 1318px;
+        height: max-content;
+        margin-left: 70px;
         margin-top: 90px;
     }
     
-    img.home {
-        width: 837px;
-        height: 471px;
-    }
-
-    .image-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-    .text-container {
-        margin-left: 12.8px;
-    }
-    
-    .tag {
-        clear: left;
-        font-size: 32px;
-        margin-top: 20px;
-        color: orange;
-    }
-    
-    .title {
-        font-size: 51px;
-        margin-top: 10.6px;
-        margin-bottom: 10.6px;
+    h1 {
+        font-size: 70px;
         font-weight: 600;
+        padding: 60px 60px 60px 60px;
     }
     
-    .subtitle {
-        font-size: 32px;
+    .text p {
+        font-size: 40px;
+        padding-left: 60px;
     }
 }
-
 
 @media screen and (max-width:768px) {
     header {
@@ -265,44 +186,23 @@ footer {
         text-align: center;
         font-size: 25px;
     }
-    
-    .items {
-        width: 712px;
-        height: 188px;
-        margin-left: 28px;
+
+    .text {
+        width: 642px;
+        height: max-content;
+        margin-left: 70px;
         margin-top: 90px;
     }
     
-    img.home {
-        float: left;
-        width: 334.8px;
-        height: 188px;
-    }
-    
-    .image-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-    
-    .text-container {
-        margin-left: 3px;
-    }
-    
-    .tag {
-        font-size: 16px;
-        margin-top: 12.4px;
-    }
-    
-    .title {
-        font-size: 23px;
-        margin-top: 6.4px;
-        margin-bottom: 6.4px;
+    h1 {
+        font-size: 40px;
         font-weight: 600;
+        padding: 60px 60px 60px 60px;
     }
     
-    .subtitle {
-        font-size: 16px;
+    .text p {
+        font-size: 25px;
+        padding-left: 60px;
     }
 }
 
@@ -321,55 +221,32 @@ footer {
         text-align: center;
         margin-top: 150px;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        color: #6D1010;
         font-size: 50px;
         font-weight: 600;
     }
 
     nav {
-        color: #6D1010;
         text-align: center;
         padding: 0 10px 0 10px;
         text-align: center;
         font-size: 18px;
     }
     
-    .items {
-        width: 335px;
-        height: 376px;
-        margin-left: 84px;
+    .text {
+        width: 430px;
+        height: max-content;
+        margin-left: 70px;
         margin-top: 90px;
     }
     
-    img.home {
-        width: 335px;
-        height: 188px;
-    }
-
-    .image-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-      }
-    
-    .text-container {
-        margin-left: 6.4px;
-    }
-    
-    .tag {
-
-        font-size: 16px;
-        margin-top: 12.4px;
-    }
-    
-    .title {
-        font-size: 23px;
-        margin-top: 6.4px;
-        margin-bottom: 6.4px;
+    h1 {
+        font-size: 40px;
         font-weight: 600;
+        padding: 60px 60px 60px 60px;
     }
     
-    .subtitle {
-        font-size: 16px;
+    .text p {
+        font-size: 25px;
+        padding-left: 60px;
     }
 }
