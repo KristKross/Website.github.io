@@ -1,0 +1,535 @@
+/* Using the universal selector to put all elements at the edge of the website. */
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #0c0c0c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgrey;
+}
+
+header {
+    font-family: 'Averia Serif Libre', cursive;
+    width: 100%;
+    height: 420px;
+    background-image: url(header.png);
+    display: flex;
+    flex-direction: column;
+}
+  
+.heading {
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: #6D1010;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+}
+
+a {
+    color: #6D1010;
+    text-decoration: none;
+}
+
+li {
+    margin: 20px 1.5em 20px 0;
+}
+
+a:hover {
+    color: white;
+}
+
+nav {
+    text-align: center;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+    background-color: black;
+}
+
+.items {
+    width: 1520px;
+    height: 1527px;
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: #898989;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-heading {
+    width: 633px;
+    height: 148px;
+    margin: 46px auto 0 auto;
+    background-color: #D9D9D9;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    padding-top: 30px;
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-size: 40px;
+    font-weight: 200;
+    margin-left: 112px;
+    margin-top: 46px;
+    color: black;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    resize: none;
+    overflow-x: hidden;
+    margin-left: 112px;
+    background-color: #D9D9D9;
+}
+
+.name {
+    width: 1290px;
+    height: 71px;
+    padding: 10px 20px 10px 20px;
+}
+
+.email {
+    width: 1290px;
+    height: 71px;
+    padding: 10px 20px 10px 20px;
+}
+
+.message {
+    width: 1290px;
+    height: 700px;
+    padding: 10px 20px 10px 20px;
+}
+
+button {
+    margin-top: 46px;
+    margin-left: 112px;
+    width: 366px;
+    height: 82px;
+    border: solid 5px black;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+.button {
+    padding: auto;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Adding media screen to make the website respnosive. */
+@media screen and (max-width: 1560px) {
+    header {
+        font-family: 'Averia Serif Libre', cursive;
+        width: 100%;
+        height: 420px;
+        background-image: url(header.png);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items {
+        width: 1160px;
+        height: 1527px;
+        margin-top: 250px;
+        margin-left: 200px;
+        background-color: #898989;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-heading {
+        width: 460px;
+        height: 148px;
+        margin: 55px auto 0 auto;
+        background-color: #D9D9D9;
+    }
+    
+    h1 {
+        font-size: 60px;
+        font-weight: 600;
+        padding-top: 35px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-size: 40px;
+        font-weight: 200;
+        margin-left: 85px;
+        margin-top: 46px;
+        color: black;
+    }
+    
+    textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        resize: none;
+        overflow-x: hidden;
+        margin-left: 85px;
+    }
+    
+    .name {
+        width: 985px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .email {
+        width: 985px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .message {
+        width: 985px;
+        height: 700px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    button {
+        margin-top: 46px;
+        margin-left: 85px;
+        width: 300px;
+        height: 82px;
+        border: solid 5px black;
+    }
+    
+    .button {
+        padding: auto;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:1458px) {
+    header {
+        font-family: 'Averia Serif Libre', cursive;
+        width: 100%;
+        height: 420px;
+        background-image: url(header.png);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading {
+        text-align: center;
+        margin-top: 150px;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    nav {
+        text-align: center;
+        padding: 0 10px 0 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .items {
+        width: 1160px;
+        height: 1527px;
+        margin-top: 250px;
+        margin-left: 149px;
+        background-color: #898989;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-heading {
+        width: 460px;
+        height: 148px;
+        margin: 55px auto 0 auto;
+        background-color: #D9D9D9;
+    }
+    
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        padding-top: 45px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 200;
+        margin-left: 85px;
+        margin-top: 46px;
+        color: black;
+    }
+    
+    textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        resize: none;
+        overflow-x: hidden;
+        margin-left: 85px;
+    }
+    
+    .name {
+        width: 985px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .email {
+        width: 985px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .message {
+        width: 985px;
+        height: 700px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    button {
+        margin-top: 46px;
+        margin-left: 85px;
+        width: 300px;
+        height: 82px;
+        border: solid 5px black;
+    }
+    
+    .button {
+        padding: auto;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-family: 'Averia Serif Libre', cursive;
+        width: 100%;
+        height: 420px;
+        background-image: url(header.png);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .heading {
+        text-align: center;
+        margin-top: 150px;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    nav {
+        text-align: center;
+        padding: 0 10px 0 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .items {
+        width: 627px;
+        height: 1527px;
+        margin-top: 250px;
+        margin-left: 81px;
+        background-color: #898989;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-heading {
+        width: 249px;
+        height: 148px;
+        margin: 55px auto 0 auto;
+        background-color: #D9D9D9;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 55px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 200;
+        margin-left: 46px;
+        margin-top: 46px;
+        color: black;
+    }
+    
+    textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        resize: none;
+        overflow-x: hidden;
+        margin-left: 46px;
+    }
+    
+    .name {
+        width: 500px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .email {
+        width: 500px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .message {
+        width: 500px;
+        height: 700px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    button {
+        margin-top: 46px;
+        margin-left: 46px;
+        width: 250px;
+        height: 82px;
+        border: solid 5px black;
+    }
+
+    .button {
+        padding: auto;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        font-family: 'Averia Serif Libre', cursive;
+        width: 100%;
+        height: 420px;
+        background-image: url(header.png);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading {
+        text-align: center;
+        margin-top: 150px;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    nav {
+        text-align: center;
+        padding: 0 10px 0 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .items {
+        width: 496px;
+        height: 1527px;
+        margin-top: 250px;
+        margin-left: 52px;
+        background-color: #898989;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-heading {
+        width: 249px;
+        height: 148px;
+        margin: 55px auto 0 auto;
+        background-color: #D9D9D9;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 55px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        margin-left: 29px;
+        margin-top: 46px;
+        color: black;
+    }
+    
+    textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        resize: none;
+        overflow-x: hidden;
+        margin-left: 29px;
+    }
+    
+    .name {
+        width: 400px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .email {
+        width: 400px;
+        height: 71px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .message {
+        width: 400px;
+        height: 700px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    button {
+        margin-top: 46px;
+        margin-left: 29px;
+        width: 200px;
+        height: 82px;
+        border: solid 5px black;
+    }
+    
+    .button {
+        padding: auto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
